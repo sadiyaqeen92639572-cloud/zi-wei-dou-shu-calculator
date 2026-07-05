@@ -17,6 +17,7 @@ export const metadata: Metadata = {
     images: [{ url: 'https://ziweidoushucalculator.com/og-image.svg', width: 1200, height: 630 }],
   },
   twitter: { card: 'summary_large_image', images: ['https://ziweidoushucalculator.com/og-image.svg'] },
+  verification: { google: 'l9u20vV0XcGssN1l4gTs1v5mucy1xNIyrrog_-rVIm0' },
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
