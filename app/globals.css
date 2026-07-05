@@ -1,0 +1,11 @@
+@import "tailwindcss";
+
+@media print {
+  nav, .locale-switch, .site-header, .site-footer, .no-print, .cta-block {
+    display: none !important;
+  }
+  body {
+    background: #fff !important;
+    color: #000 !important;
+  }
+}
