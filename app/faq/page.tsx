@@ -13,7 +13,7 @@ export const metadata: Metadata = {
 export default function FAQPage() {
   return (
     <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
-      <div className="inline-flex items-center space-x-1 bg-purple-500/10 text-purple-400 rounded-full px-2.5 py-1 text-sm font-semibold uppercase tracking-wider mb-4">
+      <div className="inline-flex items-center space-x-1 bg-purple-500/10 text-purple-400 rounded-full px-2.5 py-1 text-base font-semibold uppercase tracking-wider mb-4">
         <HelpCircle className="h-3 w-3" />
         <span>FAQ</span>
       </div>

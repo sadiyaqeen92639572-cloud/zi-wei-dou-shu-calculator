@@ -31,7 +31,7 @@ export default function Header() {
               <Link
                 key={item.name}
                 href={item.href}
-                className="flex items-center space-x-1 text-slate-300 hover:text-purple-400 font-medium text-base transition-colors"
+                className="flex items-center space-x-1 text-slate-300 hover:text-purple-400 font-medium text-lg transition-colors"
               >
                 <item.icon className="h-4 w-4 text-slate-400" />
                 <span>{item.name}</span>

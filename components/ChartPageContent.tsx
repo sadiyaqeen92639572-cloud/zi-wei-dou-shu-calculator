@@ -28,13 +28,13 @@ export default function ChartPageContent() {
   return (
     <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
       <div className="no-print flex items-center justify-between mb-8">
-        <Link href="/" className="flex items-center gap-1.5 text-base text-slate-400 hover:text-purple-400 transition-colors">
+        <Link href="/" className="flex items-center gap-1.5 text-lg text-slate-400 hover:text-purple-400 transition-colors">
           <ArrowLeft className="h-4 w-4" /> Back to Calculator
         </Link>
         {chart && (
           <button
             onClick={() => window.print()}
-            className="flex items-center gap-2 bg-purple-600 hover:bg-purple-500 text-white font-semibold rounded-lg px-4 py-2 text-base transition-colors"
+            className="flex items-center gap-2 bg-purple-600 hover:bg-purple-500 text-white font-semibold rounded-lg px-4 py-2 text-lg transition-colors"
           >
             <Printer className="h-4 w-4" /> Print / Save as PDF
           </button>
@@ -60,7 +60,7 @@ export default function ChartPageContent() {
 
       {chart && values && (
         <>
-          <p className="no-print text-base text-slate-500 mb-6">
+          <p className="no-print text-lg text-slate-500 mb-6">
             {values.gender === 'male' ? 'Male' : 'Female'} &middot; born {values.year}-{values.month}-{values.day} &middot;
             {' '}this link is bookmarkable — reopen it anytime to see this exact chart again.
           </p>

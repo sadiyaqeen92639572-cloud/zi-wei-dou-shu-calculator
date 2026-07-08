@@ -59,7 +59,7 @@ export default function HomePage() {
         <div className="absolute top-0 right-1/4 w-96 h-96 bg-purple-500/10 rounded-full blur-3xl"></div>
 
         <div className="relative max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center space-y-6">
-          <div className="inline-flex items-center space-x-1.5 bg-purple-500/10 text-purple-300 rounded-full px-3 py-1 text-sm font-semibold uppercase tracking-wider">
+          <div className="inline-flex items-center space-x-1.5 bg-purple-500/10 text-purple-300 rounded-full px-3 py-1 text-base font-semibold uppercase tracking-wider">
             <Sparkles className="h-3.5 w-3.5" />
             <span>Free &middot; Deterministic &middot; English &amp; 中文</span>
           </div>
@@ -84,7 +84,7 @@ export default function HomePage() {
           Source: traditional Zi Wei Dou Shu lunar-calendar star-placement algorithm (via the open-source <code className="text-purple-300">iztro</code> engine)
           &middot; Calcul déterministe — aucune IA, aucune estimation arbitraire.
         </p>
-        <div className="bg-slate-900 border border-slate-800 rounded-xl p-5 font-mono text-sm text-slate-300 leading-loose overflow-x-auto mb-4">
+        <div className="bg-slate-900 border border-slate-800 rounded-xl p-5 font-mono text-base text-slate-300 leading-loose overflow-x-auto mb-4">
           <div className="text-emerald-400">— Chart construction —</div>
           solar_date → lunar_date (traditional Chinese calendar conversion)<br />
           lunar_date + hour_block + gender → life_palace_position, body_palace_position<br />

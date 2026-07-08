@@ -43,7 +43,7 @@ export default function ArticleView({ slug, path }: ArticleViewProps) {
 
       <article className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12 space-y-12" id={`article-${slug}`}>
         <div className="space-y-4 border-b border-slate-900 pb-8">
-          <div className="inline-flex items-center space-x-1 bg-purple-500/10 text-purple-400 rounded-full px-2.5 py-1 text-sm font-semibold uppercase tracking-wider">
+          <div className="inline-flex items-center space-x-1 bg-purple-500/10 text-purple-400 rounded-full px-2.5 py-1 text-base font-semibold uppercase tracking-wider">
             <BookOpen className="h-3 w-3" />
             <span>Zi Wei Dou Shu Library</span>
           </div>
