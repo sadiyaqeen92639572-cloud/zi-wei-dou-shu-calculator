@@ -39,7 +39,7 @@ export default function GlossaryPage() {
             <dt className="text-lg font-semibold text-slate-100">
               {t.term} {t.chinese && <span className="text-purple-400 font-normal ml-1">{t.chinese}</span>}
             </dt>
-            <dd className="text-base text-slate-400 mt-1.5 leading-relaxed">{t.definition}</dd>
+            <dd className="text-lg text-slate-400 mt-1.5 leading-relaxed">{t.definition}</dd>
           </div>
         ))}
       </dl>

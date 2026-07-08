@@ -61,7 +61,7 @@ export default async function StarPage({ params }: { params: Promise<{ star: str
         {Object.entries(star.palaceMeanings).map(([palaceKey, meaning]) => (
           <div key={palaceKey} className="bg-slate-900 border border-slate-800 rounded-lg p-4">
             <h3 className="text-base font-semibold text-purple-400 capitalize mb-1.5">{palaceKey} Palace</h3>
-            <p className="text-base text-slate-400 leading-relaxed">{meaning}</p>
+            <p className="text-lg text-slate-400 leading-relaxed">{meaning}</p>
           </div>
         ))}
       </div>

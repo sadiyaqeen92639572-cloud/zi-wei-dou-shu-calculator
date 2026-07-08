@@ -29,7 +29,7 @@ export default function BlogIndexPage() {
               className="group flex items-center justify-between p-5 bg-slate-900 border border-slate-800 hover:border-purple-500/50 rounded-xl transition-all">
               <div>
                 <h2 className="text-lg font-serif text-slate-100 group-hover:text-purple-400 font-medium">{post.h1}</h2>
-                <p className="text-base text-slate-400 mt-1">{post.metaDesc}</p>
+                <p className="text-lg text-slate-400 mt-1">{post.metaDesc}</p>
               </div>
               <ArrowRight className="h-5 w-5 text-slate-500 group-hover:text-purple-400 flex-shrink-0 ml-4" />
             </Link>

@@ -61,7 +61,7 @@ export default function ArticleView({ slug, path }: ArticleViewProps) {
               <h2 className="text-lg sm:text-xl font-serif text-slate-100 font-medium tracking-wide">
                 {idx + 1}. {section.heading}
               </h2>
-              <p className="text-slate-300 text-sm sm:text-base">{section.content}</p>
+              <p className="text-slate-300 text-base sm:text-lg">{section.content}</p>
             </div>
           ))}
         </div>

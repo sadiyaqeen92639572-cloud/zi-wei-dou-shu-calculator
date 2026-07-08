@@ -50,7 +50,7 @@ export default function Footer() {
               <Star className="h-6 w-6" />
               <span className="font-serif tracking-wide text-xl text-slate-100">Zi Wei Dou Shu Calculator</span>
             </div>
-            <p className="text-base text-slate-400 leading-relaxed">
+            <p className="text-lg text-slate-400 leading-relaxed">
               Free, deterministic Zi Wei Dou Shu (Purple Star Astrology) chart calculator — 12 palaces, 14 major stars, Four Transformations, in clear English.
             </p>
             <div className="text-sm text-slate-500">

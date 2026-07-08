@@ -61,7 +61,7 @@ export default function RelatedPages({ relatedSlugs }: RelatedPagesProps) {
                 <span>{link.name}</span>
                 <ArrowRight className="h-3.5 w-3.5 text-slate-500 group-hover:text-purple-400 transform group-hover:translate-x-1 transition-all" />
               </h3>
-              <p className="text-sm text-slate-400 mt-2 leading-relaxed">{link.desc}</p>
+              <p className="text-base text-slate-400 mt-2 leading-relaxed">{link.desc}</p>
             </div>
           </Link>
         ))}

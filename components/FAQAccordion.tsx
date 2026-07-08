@@ -23,7 +23,7 @@ export default function FAQAccordion() {
               <ChevronDown className={`h-4 w-4 text-slate-500 flex-shrink-0 transition-transform ${openIdx === idx ? 'rotate-180' : ''}`} />
             </button>
             {openIdx === idx && (
-              <div className="px-5 pb-4 text-base text-slate-400 leading-relaxed">{item.answer}</div>
+              <div className="px-5 pb-4 text-lg text-slate-400 leading-relaxed">{item.answer}</div>
             )}
           </div>
         ))}

@@ -80,7 +80,7 @@ export default function HomePage() {
 
       <section className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12 border-t border-slate-900">
         <h2 className="text-2xl font-serif text-slate-100 font-medium mb-4">How This Calculator Works — Algorithm &amp; Method</h2>
-        <p className="text-slate-400 text-base leading-relaxed mb-4">
+        <p className="text-slate-400 text-lg leading-relaxed mb-4">
           Source: traditional Zi Wei Dou Shu lunar-calendar star-placement algorithm (via the open-source <code className="text-purple-300">iztro</code> engine)
           &middot; Calcul déterministe — aucune IA, aucune estimation arbitraire.
         </p>
@@ -100,7 +100,7 @@ export default function HomePage() {
           <div className="text-emerald-400">— algorithm —</div>
           lookup(birth_data) → palace_positions → star_positions → transformations → render_chart()
         </div>
-        <p className="text-sm text-slate-500">
+        <p className="text-base text-slate-500">
           This is the same deterministic calculation method used by professional Zi Wei Dou Shu software — the chart itself
           is fixed and reproducible; only the interpretation is a matter of reading skill.
         </p>
@@ -121,7 +121,7 @@ export default function HomePage() {
               className="group flex items-center justify-between p-4 bg-slate-900 border border-slate-800 hover:border-purple-500/50 rounded-lg transition-all">
               <div>
                 <h3 className="text-base font-semibold text-slate-100 group-hover:text-purple-400">{item.title}</h3>
-                <p className="text-sm text-slate-400 mt-1">{item.desc}</p>
+                <p className="text-base text-slate-400 mt-1">{item.desc}</p>
               </div>
               <ArrowRight className="h-4 w-4 text-slate-500 group-hover:text-purple-400 flex-shrink-0 ml-3" />
             </Link>
