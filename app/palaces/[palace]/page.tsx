@@ -42,15 +42,15 @@ export default async function PalacePage({ params }: { params: Promise<{ palace:
     <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }} />
 
-      <div className="inline-flex items-center space-x-1 bg-purple-500/10 text-purple-400 rounded-full px-2.5 py-1 text-xs font-semibold uppercase tracking-wider mb-4">
+      <div className="inline-flex items-center space-x-1 bg-purple-500/10 text-purple-400 rounded-full px-2.5 py-1 text-sm font-semibold uppercase tracking-wider mb-4">
         <Home className="h-3 w-3" />
         <span>Palace</span>
       </div>
       <h1 className="text-3xl sm:text-4xl font-serif text-slate-100 font-medium mb-1">{palace.englishName}</h1>
-      <p className="text-slate-500 text-sm mb-6">{palace.chinese} ({palace.pinyin})</p>
+      <p className="text-slate-500 text-base mb-6">{palace.chinese} ({palace.pinyin})</p>
 
-      <p className="text-purple-300 text-sm font-medium mb-4">{palace.domain}</p>
-      <p className="text-slate-300 text-base leading-relaxed mb-8">{palace.summary}</p>
+      <p className="text-purple-300 text-base font-medium mb-4">{palace.domain}</p>
+      <p className="text-slate-300 text-lg leading-relaxed mb-8">{palace.summary}</p>
 
       <div className="pt-6 mt-10 border-t border-slate-900">
         <RelatedPages currentPath={`/palaces/${palace.slug}/`} relatedSlugs={related} />

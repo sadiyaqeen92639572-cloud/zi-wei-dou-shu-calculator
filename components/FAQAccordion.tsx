@@ -19,11 +19,11 @@ export default function FAQAccordion() {
               onClick={() => setOpenIdx(openIdx === idx ? null : idx)}
               className="w-full flex items-center justify-between px-5 py-4 text-left"
             >
-              <span className="text-sm sm:text-base font-medium text-slate-100 pr-4">{item.question}</span>
+              <span className="text-base sm:text-lg font-medium text-slate-100 pr-4">{item.question}</span>
               <ChevronDown className={`h-4 w-4 text-slate-500 flex-shrink-0 transition-transform ${openIdx === idx ? 'rotate-180' : ''}`} />
             </button>
             {openIdx === idx && (
-              <div className="px-5 pb-4 text-sm text-slate-400 leading-relaxed">{item.answer}</div>
+              <div className="px-5 pb-4 text-base text-slate-400 leading-relaxed">{item.answer}</div>
             )}
           </div>
         ))}

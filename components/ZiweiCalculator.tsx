@@ -101,29 +101,29 @@ export default function ZiweiCalculator({ initialValues, showShare = true }: Ziw
       <div className="bg-slate-900 border border-slate-800 rounded-2xl p-6 sm:p-8">
         <div className="grid grid-cols-2 sm:grid-cols-3 gap-4">
           <div>
-            <label className="block text-xs font-semibold uppercase tracking-wider text-slate-400 mb-1.5">Year</label>
+            <label className="block text-sm font-semibold uppercase tracking-wider text-slate-400 mb-1.5">Year</label>
             <input type="number" value={values.year} onChange={e => setValues(v => ({ ...v, year: parseInt(e.target.value) || v.year }))}
               className="w-full bg-slate-950 border border-slate-700 rounded-lg px-3 py-2 text-slate-100 focus:outline-none focus:border-purple-500" />
           </div>
           <div>
-            <label className="block text-xs font-semibold uppercase tracking-wider text-slate-400 mb-1.5">Month</label>
+            <label className="block text-sm font-semibold uppercase tracking-wider text-slate-400 mb-1.5">Month</label>
             <input type="number" min={1} max={12} value={values.month} onChange={e => setValues(v => ({ ...v, month: parseInt(e.target.value) || v.month }))}
               className="w-full bg-slate-950 border border-slate-700 rounded-lg px-3 py-2 text-slate-100 focus:outline-none focus:border-purple-500" />
           </div>
           <div>
-            <label className="block text-xs font-semibold uppercase tracking-wider text-slate-400 mb-1.5">Day</label>
+            <label className="block text-sm font-semibold uppercase tracking-wider text-slate-400 mb-1.5">Day</label>
             <input type="number" min={1} max={31} value={values.day} onChange={e => setValues(v => ({ ...v, day: parseInt(e.target.value) || v.day }))}
               className="w-full bg-slate-950 border border-slate-700 rounded-lg px-3 py-2 text-slate-100 focus:outline-none focus:border-purple-500" />
           </div>
           <div className="col-span-2 sm:col-span-2">
-            <label className="block text-xs font-semibold uppercase tracking-wider text-slate-400 mb-1.5">Birth Hour (Chinese 2-hour block)</label>
+            <label className="block text-sm font-semibold uppercase tracking-wider text-slate-400 mb-1.5">Birth Hour (Chinese 2-hour block)</label>
             <select value={values.hourIndex} onChange={e => setValues(v => ({ ...v, hourIndex: parseInt(e.target.value) }))}
-              className="w-full bg-slate-950 border border-slate-700 rounded-lg px-3 py-2 text-slate-100 focus:outline-none focus:border-purple-500 text-sm">
+              className="w-full bg-slate-950 border border-slate-700 rounded-lg px-3 py-2 text-slate-100 focus:outline-none focus:border-purple-500 text-base">
               {HOUR_LABELS.map((label, idx) => <option key={idx} value={idx}>{label}</option>)}
             </select>
           </div>
           <div>
-            <label className="block text-xs font-semibold uppercase tracking-wider text-slate-400 mb-1.5">Gender</label>
+            <label className="block text-sm font-semibold uppercase tracking-wider text-slate-400 mb-1.5">Gender</label>
             <select value={values.gender} onChange={e => setValues(v => ({ ...v, gender: e.target.value as 'male' | 'female' }))}
               className="w-full bg-slate-950 border border-slate-700 rounded-lg px-3 py-2 text-slate-100 focus:outline-none focus:border-purple-500">
               <option value="female">Female</option>
@@ -133,11 +133,11 @@ export default function ZiweiCalculator({ initialValues, showShare = true }: Ziw
           <div className="col-span-2 sm:col-span-3 flex items-center gap-2">
             <input type="checkbox" id="isLunar" checked={values.isLunar} onChange={e => setValues(v => ({ ...v, isLunar: e.target.checked }))}
               className="rounded border-slate-700 bg-slate-950" />
-            <label htmlFor="isLunar" className="text-sm text-slate-400">This date is already a lunar calendar date</label>
+            <label htmlFor="isLunar" className="text-base text-slate-400">This date is already a lunar calendar date</label>
           </div>
         </div>
 
-        {error && <p className="text-rose-400 text-sm mt-4">{error}</p>}
+        {error && <p className="text-rose-400 text-base mt-4">{error}</p>}
 
         <div className="flex flex-col sm:flex-row gap-3 mt-6">
           <button onClick={handleCalculate}
@@ -161,15 +161,15 @@ export default function ZiweiCalculator({ initialValues, showShare = true }: Ziw
 export function ChartDisplay({ chart }: { chart: NormalizedChart }) {
   return (
     <div className="space-y-6" id="chart-display">
-      <div className="bg-slate-900 border border-slate-800 rounded-2xl p-6 grid grid-cols-2 sm:grid-cols-4 gap-4 text-sm">
-        <div><span className="text-slate-500 block text-xs uppercase tracking-wider">Solar Date</span>{chart.solarDate}</div>
-        <div><span className="text-slate-500 block text-xs uppercase tracking-wider">Lunar Date</span>{chart.lunarDate}</div>
-        <div><span className="text-slate-500 block text-xs uppercase tracking-wider">Four Pillars</span>{chart.chineseDate}</div>
-        <div><span className="text-slate-500 block text-xs uppercase tracking-wider">Five Elements Class</span>{chart.fiveElementsClass}</div>
-        <div><span className="text-slate-500 block text-xs uppercase tracking-wider">Soul Star</span>{chart.soulStarChinese}</div>
-        <div><span className="text-slate-500 block text-xs uppercase tracking-wider">Body Star</span>{chart.bodyStarChinese}</div>
-        <div><span className="text-slate-500 block text-xs uppercase tracking-wider">Zodiac</span>{chart.zodiac}</div>
-        <div><span className="text-slate-500 block text-xs uppercase tracking-wider">Western Sign</span>{chart.sign}</div>
+      <div className="bg-slate-900 border border-slate-800 rounded-2xl p-6 grid grid-cols-2 sm:grid-cols-4 gap-4 text-base">
+        <div><span className="text-slate-500 block text-sm uppercase tracking-wider">Solar Date</span>{chart.solarDate}</div>
+        <div><span className="text-slate-500 block text-sm uppercase tracking-wider">Lunar Date</span>{chart.lunarDate}</div>
+        <div><span className="text-slate-500 block text-sm uppercase tracking-wider">Four Pillars</span>{chart.chineseDate}</div>
+        <div><span className="text-slate-500 block text-sm uppercase tracking-wider">Five Elements Class</span>{chart.fiveElementsClass}</div>
+        <div><span className="text-slate-500 block text-sm uppercase tracking-wider">Soul Star</span>{chart.soulStarChinese}</div>
+        <div><span className="text-slate-500 block text-sm uppercase tracking-wider">Body Star</span>{chart.bodyStarChinese}</div>
+        <div><span className="text-slate-500 block text-sm uppercase tracking-wider">Zodiac</span>{chart.zodiac}</div>
+        <div><span className="text-slate-500 block text-sm uppercase tracking-wider">Western Sign</span>{chart.sign}</div>
       </div>
 
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
@@ -179,32 +179,32 @@ export function ChartDisplay({ chart }: { chart: NormalizedChart }) {
               <a href={`/palaces/${palace.slug}/`} className="font-serif text-slate-100 font-medium hover:text-purple-400 transition-colors">
                 {palace.englishName}
               </a>
-              <span className="text-xs text-slate-500">{palace.chinese}</span>
+              <span className="text-sm text-slate-500">{palace.chinese}</span>
             </div>
-            {palace.isLifePalace && <div className="text-[10px] uppercase tracking-wider text-purple-400 font-semibold mb-2">Life Palace</div>}
-            {palace.isBodyPalace && <div className="text-[10px] uppercase tracking-wider text-amber-400 font-semibold mb-2">Body Palace</div>}
+            {palace.isLifePalace && <div className="text-xs uppercase tracking-wider text-purple-400 font-semibold mb-2">Life Palace</div>}
+            {palace.isBodyPalace && <div className="text-xs uppercase tracking-wider text-amber-400 font-semibold mb-2">Body Palace</div>}
             <div className="space-y-1.5">
               {palace.stars.filter(s => s.type === 'major').map((star, i) => (
                 <div key={i} className="flex items-center gap-1.5 flex-wrap">
                   <StarIcon className="h-3 w-3 text-purple-400 flex-shrink-0" />
                   {star.key ? (
-                    <a href={`/stars/${star.key}/`} className="text-sm text-slate-200 hover:text-purple-400 transition-colors">{star.displayName}</a>
+                    <a href={`/stars/${star.key}/`} className="text-base text-slate-200 hover:text-purple-400 transition-colors">{star.displayName}</a>
                   ) : (
-                    <span className="text-sm text-slate-200">{star.displayName}</span>
+                    <span className="text-base text-slate-200">{star.displayName}</span>
                   )}
-                  {star.brightness && <span className="text-[10px] text-slate-500">{star.brightness}</span>}
+                  {star.brightness && <span className="text-xs text-slate-500">{star.brightness}</span>}
                   {star.transformation && (
-                    <span className={`text-[10px] px-1.5 py-0.5 rounded border ${TRANSFORMATION_COLOR[star.transformation]}`}>
+                    <span className={`text-xs px-1.5 py-0.5 rounded border ${TRANSFORMATION_COLOR[star.transformation]}`}>
                       {TRANSFORMATION_LABEL[star.transformation]}
                     </span>
                   )}
                 </div>
               ))}
               {palace.stars.filter(s => s.type === 'major').length === 0 && (
-                <div className="text-xs text-slate-600 italic">Empty palace (no major star)</div>
+                <div className="text-sm text-slate-600 italic">Empty palace (no major star)</div>
               )}
               {palace.stars.filter(s => s.type !== 'major').slice(0, 3).map((star, i) => (
-                <div key={i} className="text-xs text-slate-500">{star.chinese}</div>
+                <div key={i} className="text-sm text-slate-500">{star.chinese}</div>
               ))}
             </div>
           </div>

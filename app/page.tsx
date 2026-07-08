@@ -59,14 +59,14 @@ export default function HomePage() {
         <div className="absolute top-0 right-1/4 w-96 h-96 bg-purple-500/10 rounded-full blur-3xl"></div>
 
         <div className="relative max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center space-y-6">
-          <div className="inline-flex items-center space-x-1.5 bg-purple-500/10 text-purple-300 rounded-full px-3 py-1 text-xs font-semibold uppercase tracking-wider">
+          <div className="inline-flex items-center space-x-1.5 bg-purple-500/10 text-purple-300 rounded-full px-3 py-1 text-sm font-semibold uppercase tracking-wider">
             <Sparkles className="h-3.5 w-3.5" />
             <span>Free &middot; Deterministic &middot; English &amp; 中文</span>
           </div>
           <h1 className="text-4xl sm:text-6xl font-serif text-slate-100 tracking-tight font-medium">
             Zi Wei Dou Shu Calculator
           </h1>
-          <p className="max-w-2xl mx-auto text-base sm:text-lg text-slate-400 leading-relaxed">
+          <p className="max-w-2xl mx-auto text-lg sm:text-lg text-slate-400 leading-relaxed">
             The best free Zi Wei Dou Shu calculator for an accurate, English-language Purple Star Astrology chart.
             Enter your birth date and time for your 12 palaces, 14 major stars, and Four Transformations —
             calculated deterministically, explained in plain English.
@@ -80,11 +80,11 @@ export default function HomePage() {
 
       <section className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12 border-t border-slate-900">
         <h2 className="text-2xl font-serif text-slate-100 font-medium mb-4">How This Calculator Works — Algorithm &amp; Method</h2>
-        <p className="text-slate-400 text-sm leading-relaxed mb-4">
+        <p className="text-slate-400 text-base leading-relaxed mb-4">
           Source: traditional Zi Wei Dou Shu lunar-calendar star-placement algorithm (via the open-source <code className="text-purple-300">iztro</code> engine)
           &middot; Calcul déterministe — aucune IA, aucune estimation arbitraire.
         </p>
-        <div className="bg-slate-900 border border-slate-800 rounded-xl p-5 font-mono text-xs text-slate-300 leading-loose overflow-x-auto mb-4">
+        <div className="bg-slate-900 border border-slate-800 rounded-xl p-5 font-mono text-sm text-slate-300 leading-loose overflow-x-auto mb-4">
           <div className="text-emerald-400">— Chart construction —</div>
           solar_date → lunar_date (traditional Chinese calendar conversion)<br />
           lunar_date + hour_block + gender → life_palace_position, body_palace_position<br />
@@ -100,7 +100,7 @@ export default function HomePage() {
           <div className="text-emerald-400">— algorithm —</div>
           lookup(birth_data) → palace_positions → star_positions → transformations → render_chart()
         </div>
-        <p className="text-xs text-slate-500">
+        <p className="text-sm text-slate-500">
           This is the same deterministic calculation method used by professional Zi Wei Dou Shu software — the chart itself
           is fixed and reproducible; only the interpretation is a matter of reading skill.
         </p>
@@ -120,8 +120,8 @@ export default function HomePage() {
             <Link key={item.href} href={item.href}
               className="group flex items-center justify-between p-4 bg-slate-900 border border-slate-800 hover:border-purple-500/50 rounded-lg transition-all">
               <div>
-                <h3 className="text-sm font-semibold text-slate-100 group-hover:text-purple-400">{item.title}</h3>
-                <p className="text-xs text-slate-400 mt-1">{item.desc}</p>
+                <h3 className="text-base font-semibold text-slate-100 group-hover:text-purple-400">{item.title}</h3>
+                <p className="text-sm text-slate-400 mt-1">{item.desc}</p>
               </div>
               <ArrowRight className="h-4 w-4 text-slate-500 group-hover:text-purple-400 flex-shrink-0 ml-3" />
             </Link>

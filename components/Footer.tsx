@@ -50,18 +50,18 @@ export default function Footer() {
               <Star className="h-6 w-6" />
               <span className="font-serif tracking-wide text-xl text-slate-100">Zi Wei Dou Shu Calculator</span>
             </div>
-            <p className="text-sm text-slate-400 leading-relaxed">
+            <p className="text-base text-slate-400 leading-relaxed">
               Free, deterministic Zi Wei Dou Shu (Purple Star Astrology) chart calculator — 12 palaces, 14 major stars, Four Transformations, in clear English.
             </p>
-            <div className="text-xs text-slate-500">
+            <div className="text-sm text-slate-500">
               Disclaimer: Zi Wei Dou Shu chart interpretations are for educational, self-reflection, and entertainment purposes.
             </div>
           </div>
 
           {sections.map((section) => (
             <div key={section.title} className="space-y-4">
-              <h3 className="text-slate-200 font-medium text-sm tracking-wider uppercase">{section.title}</h3>
-              <ul className="space-y-2 text-sm">
+              <h3 className="text-slate-200 font-medium text-base tracking-wider uppercase">{section.title}</h3>
+              <ul className="space-y-2 text-base">
                 {section.links.map((link) => (
                   <li key={link.name}>
                     <Link href={link.href} className="hover:text-purple-400 transition-colors flex items-center group">
@@ -75,7 +75,7 @@ export default function Footer() {
           ))}
         </div>
 
-        <div className="border-t border-slate-800 pt-8 flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0 text-xs text-slate-500">
+        <div className="border-t border-slate-800 pt-8 flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0 text-sm text-slate-500">
           <div>&copy; {currentYear} Zi Wei Dou Shu Calculator. All rights reserved.</div>
           <div className="flex space-x-4">
             <Link href="/faq/" className="hover:text-slate-300">FAQ</Link>

@@ -43,16 +43,16 @@ export default async function StarPage({ params }: { params: Promise<{ star: str
     <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }} />
 
-      <div className="inline-flex items-center space-x-1 bg-purple-500/10 text-purple-400 rounded-full px-2.5 py-1 text-xs font-semibold uppercase tracking-wider mb-4">
+      <div className="inline-flex items-center space-x-1 bg-purple-500/10 text-purple-400 rounded-full px-2.5 py-1 text-sm font-semibold uppercase tracking-wider mb-4">
         <StarIcon className="h-3 w-3" />
         <span>Major Star</span>
       </div>
       <h1 className="text-3xl sm:text-4xl font-serif text-slate-100 font-medium mb-1">
         {star.pinyin} <span className="text-purple-400">({star.englishName})</span>
       </h1>
-      <p className="text-slate-500 text-sm mb-6">{star.chinese} &middot; {star.nature}</p>
+      <p className="text-slate-500 text-base mb-6">{star.chinese} &middot; {star.nature}</p>
 
-      <p className="text-slate-300 text-base leading-relaxed mb-8">{star.summary}</p>
+      <p className="text-slate-300 text-lg leading-relaxed mb-8">{star.summary}</p>
 
       <h2 className="text-xl font-serif text-slate-100 font-medium mb-4">
         {star.pinyin} in Each Palace
@@ -60,8 +60,8 @@ export default async function StarPage({ params }: { params: Promise<{ star: str
       <div className="space-y-4">
         {Object.entries(star.palaceMeanings).map(([palaceKey, meaning]) => (
           <div key={palaceKey} className="bg-slate-900 border border-slate-800 rounded-lg p-4">
-            <h3 className="text-sm font-semibold text-purple-400 capitalize mb-1.5">{palaceKey} Palace</h3>
-            <p className="text-sm text-slate-400 leading-relaxed">{meaning}</p>
+            <h3 className="text-base font-semibold text-purple-400 capitalize mb-1.5">{palaceKey} Palace</h3>
+            <p className="text-base text-slate-400 leading-relaxed">{meaning}</p>
           </div>
         ))}
       </div>

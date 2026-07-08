@@ -23,7 +23,7 @@ export default function GlossaryPage() {
     <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }} />
 
-      <div className="inline-flex items-center space-x-1 bg-purple-500/10 text-purple-400 rounded-full px-2.5 py-1 text-xs font-semibold uppercase tracking-wider mb-4">
+      <div className="inline-flex items-center space-x-1 bg-purple-500/10 text-purple-400 rounded-full px-2.5 py-1 text-sm font-semibold uppercase tracking-wider mb-4">
         <FileText className="h-3 w-3" />
         <span>Glossary</span>
       </div>
@@ -36,10 +36,10 @@ export default function GlossaryPage() {
       <dl className="space-y-6">
         {GLOSSARY_DATA.map(t => (
           <div key={t.term} className="border-b border-slate-900 pb-5">
-            <dt className="text-base font-semibold text-slate-100">
+            <dt className="text-lg font-semibold text-slate-100">
               {t.term} {t.chinese && <span className="text-purple-400 font-normal ml-1">{t.chinese}</span>}
             </dt>
-            <dd className="text-sm text-slate-400 mt-1.5 leading-relaxed">{t.definition}</dd>
+            <dd className="text-base text-slate-400 mt-1.5 leading-relaxed">{t.definition}</dd>
           </div>
         ))}
       </dl>
