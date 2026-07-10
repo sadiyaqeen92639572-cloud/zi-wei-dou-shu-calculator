@@ -8,15 +8,21 @@ export const metadata: Metadata = {
   description: 'Free Zi Wei Dou Shu (Purple Star Astrology) calculator. Enter your birth date and time for a deterministic 12-palace chart with 14 major stars and Four Transformations, in English and Chinese.',
   metadataBase: new URL('https://ziweidoushucalculator.com'),
   alternates: { canonical: 'https://ziweidoushucalculator.com' },
+  icons: {
+    icon: [
+      { url: '/favicon.svg', type: 'image/svg+xml' },
+      { url: '/favicon.png', type: 'image/png' },
+    ],
+  },
   openGraph: {
     title: 'Zi Wei Dou Shu Calculator — Free Purple Star Astrology Chart',
     description: 'Enter your birth date and time for a deterministic Zi Wei Dou Shu chart: 12 palaces, 14 major stars, Four Transformations.',
     url: 'https://ziweidoushucalculator.com',
     siteName: 'Zi Wei Dou Shu Calculator',
     type: 'website',
-    images: [{ url: 'https://ziweidoushucalculator.com/og-image.svg', width: 1200, height: 630 }],
+    images: [{ url: 'https://ziweidoushucalculator.com/og-image.png', width: 1200, height: 630 }],
   },
-  twitter: { card: 'summary_large_image', images: ['https://ziweidoushucalculator.com/og-image.svg'] },
+  twitter: { card: 'summary_large_image', images: ['https://ziweidoushucalculator.com/og-image.png'] },
   verification: { google: 'l9u20vV0XcGssN1l4gTs1v5mucy1xNIyrrog_-rVIm0' },
 };
 

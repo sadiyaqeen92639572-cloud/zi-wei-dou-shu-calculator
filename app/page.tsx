@@ -26,6 +26,11 @@ export const metadata: Metadata = {
     url: SITE_URL + '/',
     siteName: 'Zi Wei Dou Shu Calculator',
     type: 'website',
+    images: [{ url: SITE_URL + '/og-image.png', width: 1200, height: 630 }],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    images: [SITE_URL + '/og-image.png'],
   },
 };
 
