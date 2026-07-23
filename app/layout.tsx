@@ -7,7 +7,6 @@ export const metadata: Metadata = {
   title: 'Zi Wei Dou Shu Calculator — Free Purple Star Astrology Chart & Interpretation',
   description: 'Free Zi Wei Dou Shu (Purple Star Astrology) calculator. Enter your birth date and time for a deterministic 12-palace chart with 14 major stars and Four Transformations, in English and Chinese.',
   metadataBase: new URL('https://ziweidoushucalculator.com'),
-  alternates: { canonical: 'https://ziweidoushucalculator.com' },
   icons: {
     icon: [
       { url: '/favicon.svg', type: 'image/svg+xml' },
