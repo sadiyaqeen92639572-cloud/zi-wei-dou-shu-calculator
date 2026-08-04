@@ -116,6 +116,7 @@ export default function HomePage() {
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
           {[
             { href: '/what-is-zi-wei-dou-shu/', title: 'What Is Zi Wei Dou Shu?', desc: 'A plain-English introduction to Purple Star Astrology.' },
+            { href: '/how-to-calculate-a-zi-wei-dou-shu-chart/', title: 'How to Calculate a Chart', desc: 'The real manual algorithm, step by step.' },
             { href: '/zi-wei-dou-shu-chart-interpretation/', title: 'Chart Interpretation Guide', desc: 'How to read your chart, step by step.' },
             { href: '/zi-wei-dou-shu-stars-meaning/', title: 'Stars Meaning', desc: 'All 14 major stars explained.' },
             { href: '/zi-wei-dou-shu-palaces/', title: 'The 12 Palaces', desc: 'Every life domain in your chart.' },

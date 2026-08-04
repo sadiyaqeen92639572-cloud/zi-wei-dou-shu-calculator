@@ -10,6 +10,46 @@ export interface ArticleContent {
 }
 
 export const ARTICLES_DATA: Record<string, ArticleContent> = {
+  'how-to-calculate-a-zi-wei-dou-shu-chart': {
+    slug: 'how-to-calculate-a-zi-wei-dou-shu-chart',
+    title: 'How to Calculate a Zi Wei Dou Shu Chart, Step by Step',
+    metaTitle: 'How to Calculate Zi Wei Dou Shu Chart Manually — Step by Step',
+    metaDesc: 'The real manual method for calculating a Zi Wei Dou Shu chart by hand: Life Palace, Five Elements Bureau, Zi Wei placement, and all 14 major stars — the actual traditional algorithm, not a simplified guess.',
+    h1: 'How to Calculate a Zi Wei Dou Shu Chart by Hand',
+    sections: [
+      {
+        heading: 'Why This Isn\'t a Simple Formula',
+        content: 'Unlike Western astrology, where planet positions come from real-time ephemeris tables, Zi Wei Dou Shu places its 14 major stars using a fixed, deterministic procedure worked out entirely from your lunar birth date and hour — no astronomical data needed. That said, it takes five distinct steps and two lookup sequences to get right by hand, which is exactly why this calculator exists. Below is the real method, not a simplified approximation.',
+      },
+      {
+        heading: 'Step 1: Convert to Your Lunar Birth Date',
+        content: 'Everything in Zi Wei Dou Shu runs on the traditional Chinese lunar calendar, not the solar (Gregorian) calendar you were born under. Convert your solar birth date to its lunar equivalent first — lunar year, lunar month, and lunar day — plus your birth hour, mapped to one of the 12 traditional two-hour blocks (早子時 23:00–00:59, 丑時 01:00–02:59, and so on through 亥時 21:00–22:59).',
+      },
+      {
+        heading: 'Step 2: Find Your Life Palace (命宮)',
+        content: 'Starting from the Yin palace (寅, the traditional first palace in the 12-palace wheel), count forward month-by-month to your lunar birth month — this lands you on a palace. From there, count backward (counter-clockwise) by your birth hour\'s branch position to find your Life Palace. The palace opposite it (found by counting forward the same distance instead of backward) is your Body Palace (身宮).',
+      },
+      {
+        heading: 'Step 3: Determine Your Five Elements Bureau (五行局)',
+        content: 'Your Life Palace has a Heavenly Stem and Earthly Branch (part of the classical ganzhi calendar system). Convert the stem to a number 1–5 (甲乙=1, 丙丁=2, 戊己=3, 庚辛=4, 壬癸=5) and the branch to a number 1–3 (子午丑未=1, 寅申卯酉=2, 辰戌巳亥=3), add them together, and if the sum exceeds 5, subtract 5. The result (1 through 5) maps to your Bureau: 1=Wood-3rd, 2=Metal-4th, 3=Water-2nd, 4=Fire-6th, 5=Earth-5th — each carrying its own base number (3, 4, 2, 6, or 5) used in the next step.',
+      },
+      {
+        heading: 'Step 4: Place the Zi Wei Star (紫微星)',
+        content: 'Take your lunar birth day and divide it by your Bureau\'s base number. If it divides evenly, the quotient tells you how many palaces to count forward from Yin — that\'s where Zi Wei sits. If it doesn\'t divide evenly, add 1 to the birth day and try again, repeating until you get an even division; each addition also shifts the final palace position by one step in an alternating direction (forward on even-numbered additions, backward on odd). This remainder-chasing procedure is the single most error-prone step to do by hand, which is why even experienced practitioners double-check it against a reference table. Once Zi Wei\'s palace is set, Tian Fu (天府), the second anchor star, sits automatically at the mirror-image palace on the opposite side of the wheel.',
+      },
+      {
+        heading: 'Step 5: Place the Remaining 12 Major Stars',
+        content: 'The last 12 of the 14 major stars follow two fixed sequences, counted directly from Zi Wei and Tian Fu — no further calculation needed. Counter-clockwise from Zi Wei: Tian Ji (skip one palace), Tai Yang, Wu Qu, Tian Tong (skip two palaces), then Lian Zhen. Clockwise from Tian Fu: Tai Yin, Tan Lang, Ju Men, Tian Xiang, Tian Liang, Qi Sha (skip two palaces), then Po Jun. Once all 14 land in their palaces, the chart itself is complete — reading what the placements mean is a separate step (see our chart interpretation guide).',
+      },
+      {
+        heading: 'Why Most People Use a Calculator Instead',
+        content: 'Steps 2 and 4 both involve counting around a 12-palace wheel in specific directions with remainder-based branching logic — easy to make an off-by-one error that cascades through the rest of the chart. The calculator on this site runs the identical traditional algorithm deterministically, so if you want to verify your by-hand work, enter the same birth data and compare palace-by-palace.',
+      },
+    ],
+    relatedSlugs: ['what-is-zi-wei-dou-shu', 'zi-wei-dou-shu-chart-interpretation', 'zi-wei-dou-shu-palaces', 'zi-wei-dou-shu-stars-meaning'],
+    schemaType: 'HowTo',
+  },
+
   'what-is-zi-wei-dou-shu': {
     slug: 'what-is-zi-wei-dou-shu',
     title: 'What Is Zi Wei Dou Shu? A Plain-English Introduction',
@@ -34,7 +74,7 @@ export const ARTICLES_DATA: Record<string, ArticleContent> = {
         content: 'Each of the 12 palaces governs a specific life domain — the Life Palace for core personality, the Spouse Palace for marriage, the Career Palace for work, and so on. A reading looks at which stars occupy each palace, their brightness, and any transformations, to describe tendencies in that domain: the type of partner you attract, your natural career direction, how money tends to flow through your life. It is a descriptive framework for self-understanding, not a literal prediction of specific events.',
       },
     ],
-    relatedSlugs: ['purple-star-astrology', 'zi-wei-dou-shu-chart-interpretation', 'zi-wei-dou-shu-palaces', 'bazi-vs-zi-wei-dou-shu'],
+    relatedSlugs: ['purple-star-astrology', 'how-to-calculate-a-zi-wei-dou-shu-chart', 'zi-wei-dou-shu-chart-interpretation', 'zi-wei-dou-shu-palaces'],
     schemaType: 'Article',
   },
 
@@ -86,7 +126,7 @@ export const ARTICLES_DATA: Record<string, ArticleContent> = {
         content: "Individual palaces don't exist in isolation — the Spouse Palace and the Career Palace, for instance, often need to be read together to understand how a demanding career affects a relationship. This kind of stars in the palaces cross-referencing is where zi wei dou shu calculator and interpretation work together: the calculator lays out every palace, and interpretation connects them.",
       },
     ],
-    relatedSlugs: ['zi-wei-dou-shu-stars-meaning', 'zi-wei-dou-shu-palaces', 'flying-stars-si-hua', 'zi-wei-dou-shu-reading'],
+    relatedSlugs: ['how-to-calculate-a-zi-wei-dou-shu-chart', 'zi-wei-dou-shu-stars-meaning', 'zi-wei-dou-shu-palaces', 'flying-stars-si-hua'],
     schemaType: 'HowTo',
   },
 
