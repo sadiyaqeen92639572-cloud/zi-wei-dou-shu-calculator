@@ -40,29 +40,25 @@ export const ARTICLES_DATA: Record<string, ArticleContent> = {
 
   'purple-star-astrology': {
     slug: 'purple-star-astrology',
-    title: 'Purple Star Astrology: The Complete Guide',
-    metaTitle: 'Purple Star Astrology Calculator & Guide',
-    metaDesc: 'Purple Star Astrology (Zi Wei Dou Shu) explained: the stars, the 12-house chart, and how to read your free purple star astrology calculator results.',
-    h1: 'Purple Star Astrology',
+    title: 'Purple Star Astrology: The English Name for Zi Wei Dou Shu',
+    metaTitle: 'Purple Star Astrology = Zi Wei Dou Shu — Naming & Translation Guide',
+    metaDesc: 'Why Zi Wei Dou Shu is called "Purple Star Astrology" in English, how the translation maps to the Chinese terms, and where to get your free chart.',
+    h1: 'Purple Star Astrology (Zi Wei Dou Shu, Explained by Name)',
     sections: [
       {
-        heading: 'Purple Star Astrology, Defined',
-        content: '"Purple Star Astrology" is the standard English name for Zi Wei Dou Shu (紫微斗數) — a Chinese astrological system that maps birth data onto a 12-house chart populated by stars, rather than the planets used in Western astrology. It is entirely free to calculate here: enter your birth date, time, and gender to generate your own chart with the purple star astrology calculator on the homepage.',
+        heading: 'Same System, Two Names',
+        content: '"Purple Star Astrology" is simply the English translation of Zi Wei Dou Shu (紫微斗數) — not a different or simplified system. English-language sources use "Purple Star Astrology" almost interchangeably with the pinyin term, so if you searched either phrase you landed on the same 12-palace, star-based chart system. For the full mechanics — how the chart is built, what a reading tells you, and how it differs from BaZi — see our complete introduction: <strong>What Is Zi Wei Dou Shu?</strong>',
       },
       {
-        heading: 'The Stars in Purple Star Astrology',
-        content: 'There are 14 major purple star astrology stars — Zi Wei (Emperor), Tian Ji (Strategist), Tai Yang (Sun), Wu Qu (General), Tian Tong (Blessing), Lian Zhen (Judge), Tian Fu (Treasury), Tai Yin (Moon), Tan Lang (Greedy Wolf), Ju Men (Gate), Tian Xiang (Minister), Tian Liang (Elder), Qi Sha (Seven Killings), and Po Jun (Army Breaker) — plus dozens of minor and supporting stars that add nuance to a placement.',
+        heading: 'Why "Purple Star"?',
+        content: 'The name comes from Zi Wei (紫微), the system\'s most important star — the "Purple Star" or "Emperor Star," traditionally linked to the North Star and imperial authority in Chinese astronomy. Because Zi Wei\'s position anchors where every other major star falls on the chart, the entire system is named after it. English writers translated 紫微 literally as "Purple Star" and 斗數 as "astrology" (loosely — 斗數 literally means "star reckoning" or "numerology"), producing the compound name used in most Western sources.',
       },
       {
-        heading: 'Chinese Purple Star Astrology, Free and In English',
-        content: 'This calculator uses the same traditional Chinese lunar-calendar calculation used by professional software, but presents every star, palace, and transformation with its English name and pinyin alongside the Chinese characters — so you get an authentic chinese purple star astrology free reading, readable without any Chinese language background.',
-      },
-      {
-        heading: 'How to Read Your Purple Star Astrology Chart',
-        content: 'Start with the Life Palace (命宮) — whichever major star sits there sets the tone for your core personality. Then check the Spouse Palace for relationship patterns, the Career Palace for professional direction, and the Wealth Palace for how money tends to move through your life. Each palace page on this site (/palaces/) breaks down what to look for.',
+        heading: 'Which Term Should You Use?',
+        content: '"Zi Wei Dou Shu" is the precise, original term and what serious practitioners and software use. "Purple Star Astrology" is friendlier for English speakers unfamiliar with pinyin and is common in Western astrology/spirituality content. Both terms are calculated identically here — enter your birth date, time, and gender on the calculator to generate your chart, with every star, palace, and transformation labelled in English and pinyin alongside the Chinese characters.',
       },
     ],
-    relatedSlugs: ['what-is-zi-wei-dou-shu', 'zi-wei-dou-shu-stars-meaning', 'zi-wei-dou-shu-chart-interpretation'],
+    relatedSlugs: ['what-is-zi-wei-dou-shu', 'zi-wei-dou-shu-stars-meaning', 'zi-wei-dou-shu-palaces'],
     schemaType: 'Article',
   },
 
