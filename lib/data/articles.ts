@@ -363,7 +363,7 @@ export const ARTICLES_DATA: Record<string, ArticleContent> = {
     sections: [
       {
         heading: 'Chart Calculation Is Exact',
-        content: 'The mechanical part — converting your solar birth date to the lunar calendar, placing the Life and Body Palace, positioning all 14 major stars, and calculating the Four Transformations — is a fixed, deterministic algorithm. Given the same birth date, time, and gender, any correctly-built calculator (this one included) will produce an identical chart every time. This part of accurate zi wei dou shu calculator claims is straightforward to verify.',
+        content: 'The mechanical part — converting your solar birth date to the lunar calendar, placing the Life and Body Palace, positioning all 14 major stars, and calculating the Four Transformations — is a fixed, deterministic algorithm. Given the same birth date, time, and gender, any correctly-built calculator (this one included) will produce an identical chart every time. This part of accurate zi wei dou shu calculator claims is straightforward to verify. One simplification worth knowing: this calculator uses your entered clock time and time zone directly, without adjusting for true solar time (the small offset between clock time and the sun\'s actual position based on your exact longitude). For most locations this offset is a few minutes and won\'t change your hour-based Palace placement — but if your birth time falls close to a two-hour block boundary, a longitude-based adjustment could shift it into the adjacent block.',
       },
       {
         heading: 'Where Accuracy Actually Depends on You',
