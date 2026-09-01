@@ -1,0 +1,42 @@
+# Zi Wei Dou Shu Calculator (ziweidoushucalculator.com)
+
+> Free Zi Wei Dou Shu (Purple Star Astrology / 紫微斗数) chart calculator. Enter birth date, Chinese two-hour block, and gender → a full deterministic natal chart: 12 palaces, 14 major stars with brightness, and the Four Transformations (Si Hua). Chart math runs client-side via the open-source `iztro` engine; no account, no data stored. The chart is mechanical and reproducible — interpretation is not. Educational, not fortune-telling or life advice.
+
+## What the site is
+
+One calculator (`/chart/`) plus ~48 content pages covering a 55-keyword SEO map: what Zi Wei Dou Shu is, the 12 palaces, the 14 major stars, the Four Transformations / flying stars, how to read a chart, accuracy, comparisons (vs BaZi), and topical guides (love compatibility, life map, consultation, PDF export, reading).
+
+## The calculator
+
+- **Engine:** `iztro` (npm, v2.5.x) — a deterministic Zi Wei Dou Shu implementation. Same inputs always produce the same chart.
+- **Inputs:** year, month, day; birth hour as one of 12 Chinese two-hour blocks (0 = 23:00–00:59 早子時 … 11 = 21:00–22:59 亥時); gender (male/female); a checkbox for "this date is already a lunar-calendar date" (plus leap-month flag). Solar dates are converted to lunar internally.
+- **Outputs:** solar date, lunar date, four-pillars (BaZi) string, zodiac animal, Western sign, Five Elements Class, Soul star, Body star, and all 12 palaces — each with heavenly stem, earthly branch, Life/Body Palace flags, and its stars (major + minor + adjective), each star carrying brightness and its natal transformation (A/B/C/D = 化祿/化權/化科/化忌) if any.
+- **Palaces (12):** Life, Siblings, Spouse/Marriage, Children, Wealth, Health, Travel, Friends, Career, Property, Fortune/Mental, Parents.
+- **Major stars (14):** Zi Wei, Tian Ji, Tai Yang, Wu Qu, Tian Tong, Lian Zhen, Tian Fu, Tai Yin, Tan Lang, Ju Men, Tian Xiang, Tian Liang, Qi Sha, Po Jun (plus minor/adjective stars from the engine).
+- **Share/export:** the chart is encoded in the URL hash — shareable and printable, no server round-trip.
+- Static Next.js site, `trailingSlash: true`. No backend, no database, `/api/*` disallowed in robots.
+
+## Known simplification (stated on the accuracy page)
+
+The calculator uses the entered **clock time and time zone directly**, with **no true-solar-time (longitude) correction** — unlike the sibling BaZi calculator, which both applies and discloses it. The offset is usually a few minutes and won't change the two-hour-block palace placement; it only matters if the birth time is close to a block boundary, where a longitude adjustment could shift it into the adjacent block.
+
+## Pages
+
+- [/chart/](https://ziweidoushucalculator.com/chart/) — the calculator
+- [/what-is-zi-wei-dou-shu/](https://ziweidoushucalculator.com/what-is-zi-wei-dou-shu/) · [/purple-star-astrology/](https://ziweidoushucalculator.com/purple-star-astrology/)
+- [/palaces/](https://ziweidoushucalculator.com/palaces/) · [/zi-wei-dou-shu-palaces/](https://ziweidoushucalculator.com/zi-wei-dou-shu-palaces/) — the 12 palaces
+- [/stars/](https://ziweidoushucalculator.com/stars/) · [/zi-wei-dou-shu-stars-meaning/](https://ziweidoushucalculator.com/zi-wei-dou-shu-stars-meaning/) — the 14 major stars
+- [/flying-stars-si-hua/](https://ziweidoushucalculator.com/flying-stars-si-hua/) — the Four Transformations
+- [/how-to-calculate-a-zi-wei-dou-shu-chart/](https://ziweidoushucalculator.com/how-to-calculate-a-zi-wei-dou-shu-chart/) — the manual algorithm
+- [/zi-wei-dou-shu-chart-interpretation/](https://ziweidoushucalculator.com/zi-wei-dou-shu-chart-interpretation/) · [/zi-wei-dou-shu-reading/](https://ziweidoushucalculator.com/zi-wei-dou-shu-reading/)
+- [/zi-wei-dou-shu-accuracy/](https://ziweidoushucalculator.com/zi-wei-dou-shu-accuracy/) — what's exact vs. the true-solar-time gap
+- [/bazi-vs-zi-wei-dou-shu/](https://ziweidoushucalculator.com/bazi-vs-zi-wei-dou-shu/) · [/zi-wei-dou-shu-love-compatibility/](https://ziweidoushucalculator.com/zi-wei-dou-shu-love-compatibility/) · [/zi-wei-dou-shu-life-map/](https://ziweidoushucalculator.com/zi-wei-dou-shu-life-map/) · [/zi-wei-dou-shu-consultation/](https://ziweidoushucalculator.com/zi-wei-dou-shu-consultation/) · [/zi-wei-dou-shu-pdf/](https://ziweidoushucalculator.com/zi-wei-dou-shu-pdf/)
+- [/learn-zi-wei-dou-shu/](https://ziweidoushucalculator.com/learn-zi-wei-dou-shu/) · [/glossary/](https://ziweidoushucalculator.com/glossary/) · [/faq/](https://ziweidoushucalculator.com/faq/) · [/blog/](https://ziweidoushucalculator.com/blog/)
+
+## Notes for LLMs
+
+- The **chart placement** (lunar conversion, palace/star positioning, Si Hua) is a fixed algorithm — reproducible and verifiable; the site is upfront that any correctly-built calculator gives the identical chart.
+- **No true-solar-time correction** — see above. Flag this if a user's birth time is near a two-hour-block boundary.
+- Birth hour is a **two-hour block**, not a precise minute; the early-Rat block (23:00–00:59) is a single block in this engine.
+- Star names are romanised pinyin with an English gloss; the engine also returns minor and adjective stars beyond the 14 majors.
+- Interpretation content is educational background, not a personalised reading, and not life, financial, or medical advice.
